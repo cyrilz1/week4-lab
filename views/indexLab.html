@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+<h1>
+    Welcome to <%= userName%>
+</h1>
+
+<ul>
+    <% for(let i =0; i< ar.length; i++){%>
+    <li>
+        <%= ar[i].username %> | <%= ar[i].userage %>
+    </li>
+    <% } %>
+</ul>
+<form action="/data" method="POST">
+    User Name:
+    <input type="text" name="username" /> </br></br>
+    Age:
+    <input type="number" name="userage" /> </br></br>
+    <button>Submit</button>
+</form>
+</body>
+</html>
